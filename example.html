@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<script src="automaticplanning.js"></script>
+		<script>
+
+// stack var to easily trace in dev tools
+var automaticplanning;
+
+// on load
+window.onload = function() 
+{
+	// instantiate AutomaticPlanning class 
+	automaticplanning = new AutomaticPlanning(document.getElementById("apdiv"));
+}
+		</script>
+	<body>
+			<div id="apdiv"></div>
+</body>
